@@ -64,7 +64,10 @@ int uart_get_until_whitespace(char *buffer, int max_length, int *endsInNL) {
     return i;
 }
 
-// Function to receive input until a match or a mismatch (ignores white spaces)
+/**
+ * Function to receive input until a match or a mismatch (ignores white spaces)
+ * @return whether there was a match or not
+ */
 int uart_get_match(const char match) {
     char c;
     for (;;) {

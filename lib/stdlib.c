@@ -1,5 +1,10 @@
 #include "stdlib.h"
 
+/**
+ * Function to convert string to integer
+ * @param s: string representing the integer
+ * @return int: converted integer
+ */
 int atoi(const char *s) {
   int num = 0;
   int sign = 1;
@@ -18,6 +23,11 @@ int atoi(const char *s) {
   return sign * num;
 }
 
+/**
+ * Function to convert integer to string representation
+ * @param num: number to convert
+ * @param buffer: pointer to the space where the string will be stored
+ */
 void itoa(int num, char *buffer) {
   int i = 0;
   int is_negative = 0;
@@ -56,6 +66,11 @@ void itoa(int num, char *buffer) {
   }
 }
 
+/**
+ * Function to convert string to floating point number
+ * @param s: string containing the represented number
+ * @return float: converted number or 0 if there's invalid character
+ */
 float atof(const char *s) {
   float num, sign = 1;
   char isFraction;
@@ -85,6 +100,11 @@ float atof(const char *s) {
   return sign * num;
 }
 
+/**
+ * Function to convert float to string
+ * @param num: number to convert
+ * @param buffer: memory space to store the resulting string
+ */
 void ftoa(float num, char *buffer) {
   int i = 0, isNegative = 0, integer = (int)num;
 

@@ -20,15 +20,15 @@ Highest abstraction level where the application logic resides. Does not interact
 Intermediate level that interacts with the OS Level to provide functionalities to facilitate higher level operations.
 ```
 └── lib/
-  ├── stdio.c
-  ├── stdlib.c
-  └── string.c
+  ├── stdio.c       <- standard input/output operations
+  ├── stdlib.c      <- number-string convertion functions
+  └── string.c      <- string manipulation functions
 ```
 ### OS Level
 Lowest level of the application where the communication with the hardware occures. Simplifies the hardware operations for the higher level uses.
 ```
 └── os/
-  ├── os.c
+  ├── os.c          <- uart communication functions
   └── root.s
 ```
 ## Compiling and running

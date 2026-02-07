@@ -1,5 +1,11 @@
 #include "stdio.h"
 
+/**
+ * Display the given message on the terminal
+ * @param format: the string to be displayed. Can contain the format for additional inputs to be inserted.
+ *                %s for strings, %d for integers, %f for floating point numbers
+ * @param args: additional arguments to be passed according to the given format
+ */
 void PRINT(const char *format, ...) {
   va_list args;
   va_start(args, format);
@@ -37,6 +43,12 @@ void PRINT(const char *format, ...) {
   }
 }
 
+/**
+ * Reads the input from the terminal following the given format
+ * @param format: the format of the input to be read
+ *                %s to read string, %d to read integer, %f to read floating point number
+ * @param args: pointers to the memory spaces of where the inputs are to be saved
+ */
 void READ(const char *format, ...) {
   va_list args;
   va_start(args, format);
